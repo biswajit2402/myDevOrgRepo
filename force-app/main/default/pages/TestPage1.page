@@ -1,0 +1,20 @@
+<apex:page standardController="Account" sidebar="False">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations to You</h1>
+  This is your new Page: TestPage1
+  <!-- End Default Content REMOVE THIS -->
+  <apex:form >
+  <apex:pageBlock >
+  <apex:pageBlockSection >
+  <apex:inputField value="{!Account.Name}" />
+    <apex:inputField value="{!Account.Phone}" />
+
+    </apex:pageBlockSection>
+          <apex:pageBlockButtons >
+    <apex:commandButton value="Save" action="{!save}" />
+    </apex:pageBlockButtons>
+  </apex:pageBlock>
+  
+
+  </apex:form>
+</apex:page>
